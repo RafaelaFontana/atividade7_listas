@@ -6,17 +6,17 @@ programa
 	{
 		
 		/*4. Escreva um programa que preencha automaticamente   
-		um array numérico com 7 números gerados aleatoriamente  
+		um array numÃ©rico com 7 nÃºmeros gerados aleatoriamente  
 		pelo computador e depois mostre os valores gerados na 
 		tela. */
 		
-		inteiro numeroSorteado = 0
+		inteiro numeroSorteado [7]
 		
-		escreva("----------Sorteio de números---------\n\n")
+		escreva("----------Sorteio de nÃºmeros---------\n\n")
 		
-		para(inteiro i = 1; i <= 7; i ++){
-		    numeroSorteado = u.sorteia (0, 200)
-		    escreva("Nº ", i,": ", numeroSorteado, "\n")
+		para(inteiro i = 1; i < 7; i ++){
+		    numeroSorteado [i] = u.sorteia (0, 200)
+		    escreva("NÂº ", i,": ", numeroSorteado[i], "\n")
 		}
 		
 		escreva("\n-------------------------------------\n")
