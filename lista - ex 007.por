@@ -2,13 +2,13 @@ programa {
 	funcao inicio() {
 		
 		/*7. Escreva um algoritmo que:
-    a. Peça ao usuário 5 números inteiros ÍMPARES (garanta essa restrição). Armazene esses
-    valores em um vetor chamado “listadeImpares”   
+    a. PeÃ§a ao usuÃ¡rio 5 nÃºmeros inteiros ÃMPARES (garanta essa restriÃ§Ã£o). Armazene esses
+    valores em um vetor chamado â€œlistadeImparesâ€   
     
-    b. Peça ao usuário 5 números inteiros PARES (garanta essa restrição). Armazene esses
-    valores em um vetor chamado “listadePares”  
+    b. PeÃ§a ao usuÃ¡rio 5 nÃºmeros inteiros PARES (garanta essa restriÃ§Ã£o). Armazene esses
+    valores em um vetor chamado â€œlistadeParesâ€  
     
-    c. Crie um terceiro vetor com 10 posições, formados pelos valores desses dois vetores
+    c. Crie um terceiro vetor com 10 posiÃ§Ãµes, formados pelos valores desses dois vetores
     intercalados. Exiba esse vetor. */
     
     inteiro listaImpares[5]
@@ -17,22 +17,24 @@ programa {
     inteiro numero = 0
     
     para(inteiro i = 0; i < 5; i++){
-        escreva("Digite um número ímpar: ")
+        escreva("Digite um nÃºmero Ã­mpar: ")
         leia(listaImpares[i])
         limpa()
+	
         se(listaImpares[i] % 2 == 0 ou listaImpares[i] == 0){
-            escreva("Digite apenas números ímpares diferentes de zero: ")
+            escreva("Digite apenas nÃºmeros Ã­mpares diferentes de zero: ")
             leia(listaImpares[i])
             limpa()
         }
     }
     
     para(inteiro i = 0; i < 5; i++){
-        escreva("Digite um número par: ")
+        escreva("Digite um nÃºmero par: ")
         leia(listaPares[i])
         limpa()
+	
         se(listaPares[i] % 2 == 1 ou listaPares[i] == 0){
-            escreva("Digite apenas números pares diferentes de zero: ")
+            escreva("Digite apenas nÃºmeros pares diferentes de zero: ")
             leia(listaPares[i])
             limpa()
         }
